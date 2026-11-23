@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos — TorgaTech</title>
+</head>
+<body>
+
+    <header>
+        <h1>TorgaTech Soluções Digitais</h1>
+        <p>Fale connosco para iniciar o seu próximo projeto.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Informações de Contacto</h2>
+            <address>
+                <p><strong>Morada:</strong> Rua da Inovação, n.º 42, 3000-000 Coimbra, Portugal</p>
+                <p><strong>E-mail:</strong> <a href="mailto:geral@torgatech.pt">geral@torgatech.pt</a></p>
+                <p><strong>Telefone:</strong> <a href="tel:+351239000000">+351 239 000 000</a></p>
+            </address>
+        </section>
+
+        <section>
+            <h2>Envie-nos uma Mensagem</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" minlength="3" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="servico">Serviço Pretendido:</label><br>
+                    <select id="servico" name="servico" required>
+                        <option value="" disabled selected>-- Selecione um serviço --</option>
+                        <option value="website">Criação de Website</option>
+                        <option value="auditoria">Auditoria SEO / Acessibilidade</option>
+                        <option value="manutencao">Manutenção Técnica</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="40" minlength="10" required></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="privacidade" name="privacidade" required>
+                    <label for="privacidade">Autorizo o contacto para resposta ao meu pedido.</label>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Pedido</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>TorgaTech Soluções Digitais &copy; 2026 — Todos os direitos reservados.</p>
+        <p><a href="index.html">Voltar ao Início</a></p>
+    </footer>
+
+</body>
+</html>

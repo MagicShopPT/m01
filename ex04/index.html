@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>EX04 — Formulário de Contacto</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de Contacto Profissional</h1>
+        <p>Preencha os campos abaixo para entrar em contacto connosco.</p>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <p>
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Vitor Silva" minlength="3" maxlength="80" required>
+                </p>
+
+                <p>
+                    <label for="email">Endereço de E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Ex: vitor.silva@exemplo.pt" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone (9 dígitos):</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Ex: 912345678" pattern="[0-9]{9}" title="Introduza um número de telefone com 9 dígitos" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalhes do Pedido</legend>
+
+                <p>
+                    <label for="departamento">Departamento / Área (Seleção):</label><br>
+                    <select id="departamento" name="departamento" required>
+                        <option value="" disabled selected>-- Selecione uma opção --</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="comercial">Comercial e Orçamentos</option>
+                        <option value="parcerias">Parcerias e Projetos</option>
+                        <option value="outro">Outro Assunto</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="assunto">Assunto:</label><br>
+                    <input type="text" id="assunto" name="assunto" placeholder="Resumo do motivo de contacto" minlength="5" maxlength="100" required>
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva aqui a sua mensagem detalhada..." minlength="10" maxlength="1000" required></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Li e aceito os termos de privacidade e tratamento de dados.</label>
+            </p>
+
+            <p>
+                <button type="submit">Enviar Mensagem</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="../ex03/index.html">Voltar ao EX03</a></p>
+        <p>&copy; 2026 Vitor Silva (Aluno n.º 13422)</p>
+    </footer>
+
+</body>
+</html>
